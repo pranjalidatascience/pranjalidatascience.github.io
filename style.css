@@ -137,3 +137,166 @@ section, .s-intro, .s-about, .s-works, .s-contact {
   --color-body: #111111;
   --color-text: #ffffff;
 }
+
+/* ================================
+   CONSULTING / QUANT REDESIGN
+   ================================ */
+
+:root {
+  --primary: #B2CEFE;
+  --accent: #BAED91;
+  --highlight: #FEA3AA;
+
+  --text-main: #111111;
+  --text-subtle: #555555;
+
+  --bg-main: #ffffff;
+  --bg-soft: #f8fafc;
+
+  --border: rgba(0,0,0,0.08);
+}
+
+/* GLOBAL CLEANUP */
+body {
+  background: var(--bg-main) !important;
+  color: var(--text-main) !important;
+  font-family: "Inter", sans-serif;
+  letter-spacing: -0.01em;
+}
+
+/* HEADINGS = STRONG, CONSULTING STYLE */
+h1, h2, h3 {
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+/* SECTION SPACING */
+section {
+  padding: 80px 0 !important;
+  border-bottom: 1px solid var(--border);
+}
+
+/* ================================
+   HERO SECTION (VERY IMPORTANT)
+   ================================ */
+
+.s-intro {
+  background: white !important;
+}
+
+.s-intro h1 {
+  font-size: 56px;
+  line-height: 1.1;
+  max-width: 800px;
+}
+
+.s-intro p {
+  font-size: 18px;
+  color: var(--text-subtle);
+  max-width: 600px;
+}
+
+/* ================================
+   METRIC STRIP (CONSULTING FEEL)
+   ================================ */
+
+.metric-strip {
+  display: flex;
+  gap: 60px;
+  margin-top: 40px;
+}
+
+.metric {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.metric span {
+  display: block;
+  font-size: 14px;
+  color: var(--text-subtle);
+  font-weight: 400;
+}
+
+/* ================================
+   EXPERIENCE (TIMELINE STYLE)
+   ================================ */
+
+.timeline-block {
+  border-left: 2px solid var(--primary);
+  padding-left: 20px;
+  margin-bottom: 40px;
+}
+
+.timeline-block h3 {
+  font-size: 20px;
+}
+
+.timeline-block p {
+  color: var(--text-subtle);
+}
+
+/* ================================
+   PROJECT CARDS (QUANT STYLE)
+   ================================ */
+
+.card, .folio-item {
+  background: white !important;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px;
+  transition: all 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: var(--primary);
+}
+
+/* PROJECT TITLE */
+.card h3 {
+  font-size: 18px;
+}
+
+/* PROJECT DESCRIPTION */
+.card p {
+  font-size: 14px;
+  color: var(--text-subtle);
+}
+
+/* ================================
+   BUTTONS (CLEAN, SHARP)
+   ================================ */
+
+.btn {
+  background: transparent !important;
+  border: 1px solid var(--text-main);
+  color: var(--text-main) !important;
+  font-size: 12px;
+  letter-spacing: 0.15em;
+}
+
+.btn:hover {
+  background: var(--primary) !important;
+  border-color: var(--primary);
+}
+
+/* ================================
+   NAVBAR (MINIMAL)
+   ================================ */
+
+header, nav {
+  background: white !important;
+  border-bottom: 1px solid var(--border);
+}
+
+/* ================================
+   REMOVE TEMPLATE "HEAVINESS"
+   ================================ */
+
+.s-intro__scroll,
+.s-intro__social,
+.preloader,
+#preloader {
+  display: none !important;
+}
