@@ -300,3 +300,118 @@ header, nav {
 #preloader {
   display: none !important;
 }
+
+/* HERO LAYOUT */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 60px;
+  gap: 40px;
+}
+
+.hero-left {
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 52px;
+  line-height: 1.1;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #555;
+  margin-top: 20px;
+}
+
+/* GRADIENT TEXT */
+.gradient-text {
+  background: linear-gradient(90deg, #B2CEFE, #FEA3AA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* HERO IMAGE */
+.hero-right img {
+  width: 450px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+/* BUTTONS */
+.btn-primary {
+  background: #B2CEFE;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: black;
+  margin-right: 10px;
+}
+
+.btn-outline {
+  border: 1px solid black;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: black;
+}
+
+/* HOVER */
+.btn-primary:hover {
+  background: #FEA3AA;
+}
+
+.btn-outline:hover {
+  background: #B2CEFE;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.card {
+  background: white;
+  border-radius: 14px;
+  padding: 20px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+
+.highlight {
+  background: linear-gradient(135deg, #B2CEFE, #BAED91);
+  color: black;
+}
+body::before {
+  content: "";
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  background: #B2CEFE;
+  opacity: 0.2;
+  filter: blur(120px);
+  top: -100px;
+  right: -100px;
+  z-index: -1;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  width: 400px;
+  height: 400px;
+  background: #FEA3AA;
+  opacity: 0.15;
+  filter: blur(120px);
+  bottom: -100px;
+  left: -100px;
+  z-index: -1;
+}
