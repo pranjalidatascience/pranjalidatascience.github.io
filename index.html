@@ -1,236 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>What Makes a Country Happy?</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Provided CSS -->
-    <link rel="stylesheet" href="templatemo-personal-style.css">
-
-    <style>
-        body {
-            font-family: "Inter", "Segoe UI", Arial, sans-serif;
-            font-size: 18px;
-            text-align: center;
-        }
-
-        h1 {
-            font-size: 3rem;
-        }
-
-        h2 {
-            font-size: 2.2rem;
-            margin-bottom: 1rem;
-        }
-
-        p {
-            font-size: 1.15rem;
-            max-width: 900px;
-            margin: 0 auto 1.5rem auto;
-        }
-
-        /* Center sections */
-        .section {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        section {
-            padding: 80px 20px;
-        }
-
-        /* Center navigation */
-        .nav-container {
-            justify-content: center;
-        }
-
-        .nav-links {
-            justify-content: center;
-        }
-
-        /* Center iframes */
-        iframe {
-            display: block;
-            margin: 30px auto;
-            max-width: 1000px;
-        }
-
-        /* Hero text centering */
-        .hero div {
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        /* Footer centering */
-        .footer-content {
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
-
-        .footer-right {
-            flex-direction: column;
-            gap: 1rem;
-        }
-    </style>
+  <title>Pranjali Gupta</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- Navigation -->
 <nav>
-    <div class="nav-container">
-        <ul class="nav-links">
-            <li><a href="#intro">Introduction</a></li>
-            <li><a href="#choropleth">Map</a></li>
-            <li><a href="#pcp">PCP</a></li>
-            <li><a href="#donuts">Donuts</a></li>
-            <li><a href="#scatter">Scatter</a></li>
-            <li><a href="#conclusion">Conclusion</a></li>
-        </ul>
-    </div>
+  <div><strong>Pranjali Gupta</strong></div>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="experience.html">Experience</a>
+    <a href="projects.html">Projects</a>
+    <a href="leadership.html">Leadership</a>
+    <a href="contact.html">Contact</a>
+  </div>
 </nav>
 
-<!-- Hero -->
 <section class="hero">
-    <div class="floating-shapes">
-        <div class="shape shape-1"></div>
-        <div class="shape shape-2"></div>
-        <div class="shape shape-3"></div>
-        <div class="shape shape-4"></div>
-        <div class="shape shape-5"></div>
-        <div class="shape shape-6"></div>
+  <h1>AI + Data Science + Finance</h1>
+  <p>
+    Data Science & Finance student at William & Mary building AI-driven systems across healthcare, sustainability, and financial markets.
+  </p>
+</section>
+
+<section class="section">
+  <h2>About Me</h2>
+  <p>
+    I specialize in applying machine learning, NLP, and data-driven decision-making to real-world problems. My work spans healthcare AI, conservation analytics, and financial systems.
+  </p>
+</section>
+
+<section class="section">
+  <h2>Featured Work</h2>
+  <div class="grid">
+    
+    <div class="card">
+      <h3>Extinction Solutions Index</h3>
+      <p>AI-powered conservation intelligence platform using LLMs and RAG.</p>
+      <a href="https://pranjalidatascience.github.io/CRP-CXL/" class="btn">View Project</a>
     </div>
 
-    <div style="position: relative; z-index: 2; color: white;">
-        <h1>What makes a country happy?</h1>
-        <!-- <p>Our research question: What makes a country happy?</p> -->
+    <div class="card">
+      <h3>Supercomputing Research</h3>
+      <p>High-performance computing applied to large-scale data problems.</p>
+      <a href="https://github.com/pranjalidatascience/SUPERCOMPUTING" class="btn">View Code</a>
     </div>
-</section>
 
-<!-- Introduction -->
-<section id="intro" class="section">
-    <h2>Introduction</h2>
-
-    <p>
-        The aim of this project is to answer the question: What Factors are Associated with World Happiness?
-        In order to take a deeper dive into this question, we have utilized the dataset “World Happiness Report”
-        from the Kaggle database. This data was collected from the Gallup World Poll between the years of 2015-2019.
-        For the purposes of individual visualizations, we are focusing on the year 2019, however there are occasional
-        comparisons drawn between all years as well.
-    </p>
-
-    <p>
-        This dataset ranks countries based on “Happiness Score”, which is what we will be using as our metric for
-        “World Happiness” to answer the research question. The “Happiness Score” in itself is the result of a Gallup
-        Poll of a representative sample of the country’s population, where respondents were asked to rank their
-        current lives from 0-10 with zero being the worst possible life, and 10 being the best possible life.
-    </p>
-
-    <p>
-        Additionally, the dataset provides six other columns that we will use: GDP per Capita, Social Support
-        (Family), Healthy Life Expectancy, Freedom to Make Life Choices, Generosity, and Perceptions of Corruption.
-        These columns are estimates as to how much each factor listed contributes to the results from the Happiness
-        Score. It is worth noting that these columns are not raw components, but are scaled so that when summed,
-        they result in the Happiness Score for each country.
-    </p>
-</section>
-
-<!-- Choropleth -->
-<section id="choropleth" class="section">
-    <h2>Choropleth map</h2>
-
-    <p>
-        Here is the created choropleth map showcasing the countries with their respective happiness score, as well
-        as the breakdown of score shown in the tooltip. This map has shown us that in the year 2019 that Finland,
-        Denmark, Canada, Norway, Sweden, and Australia have the highest happiness scores.
-    </p>
-
-    <iframe src="Choropleth.html" width="100%" height="650"></iframe>
-</section>
-
-<!-- PCP -->
-<section id="pcp" class="section">
-    <h2>PCP Chart</h2>
-
-    <p>
-        For this chart, we wanted to display comparisons in factors between the top 10 and 
-        last 10 countries. This PCP chart allows us to see some trends in the highest and 
-        lowest ranking scored countries that may not have been seen otherwise. For example, 
-        the top 10 countries all score similarly in terms of each factor, which is 
-        interesting compared to the lowest 10 countries which are far more varied. So, 
-        perhaps there are certain factors that are associated with higher scores, but 
-        specific factors may be less of a contributing input for lower scoring countries.
-
-    </p>
-    <img src="PCP.png" width="650" height="650">
-</section>
-
-<!-- Donuts -->
-<section id="donuts" class="section">
-    <h2>Donut Charts</h2>
-
-    <p>
-        This set of charts displays the breakdown of happiness score factors for the top 6 
-        and lowest 6 scoring counties. The set of donut charts helps to show us possible 
-        trends in the highest and lowest scoring countries in a more specific way, 
-        furthering on the PCP plot previous. For example, in the top scoring countries 
-        it appears that GDP per capita and Social Support are important factors, and for 
-        the lowest 6 countries, Social Support also appears to be influential for those 
-        scores based on the donut charts.
-    </p>
-    <iframe src="top6donutplot.html" height="650" width="100%"></iframe>
-    <iframe src="last6donutplots.html" height="650" width="100%"></iframe>
-</section>
-
-<!-- Scatter -->
-<section id="scatter" class="section">
-    <h2>Scatter Plot</h2>
-
-    <p>
-        Since our focused Happiness report is for the year 2019, we chose to highlight the top 10 countries with the
-        highest happiness scores in that year and look at how those countries may have changed over 2015 to 2019.
-    </p>
-
-    <p>
-        In looking at the overall shape of the plot, you can see how the happiness scores plateau at GDP per capita
-        of around 43k. Despite Luxembourg having the highest GDP per capita for years 2015 to 2019 it is not in the
-        top 10 happiest countries.
-    </p>
-
-    <iframe src="gdp_vs_happiness_top10.html" height="650" width="100%""></iframe>
-</section>
-
-<!-- Conclusion -->
-<section id="conclusion" class="section">
-    <h2>Conclusion</h2>
-
-    <p>
-        We found that Countries that were reported to have high happiness score indexes have had the high GDP per
-        capita, strong social support and higher life expectancies, suggesting that these factors more strongly
-        contribute to overall happiness.
-    </p>
-</section>
-
-<!-- Footer -->
-<footer class="footer">
-    <div class="footer-content">
-        <div class="footer-left">
-            <p>Sources</p>
-        </div>
-
-        <div class="footer-right">
-            <p>
-                United Nations Sustainable Development Solutions Network. “World Happiness Report.” Kaggle.
-            </p>
-            <p>
-                World Bank. “GDP per capita (current US$).” World Bank Open Data.
-            </p>
-        </div>
+    <div class="card">
+      <h3>Portfolio Website</h3>
+      <p>Personal data science portfolio and technical showcase.</p>
+      <a href="https://pranjalidatascience.github.io/" class="btn">Visit</a>
     </div>
-</footer>
+
+  </div>
+</section>
 
 </body>
 </html>
