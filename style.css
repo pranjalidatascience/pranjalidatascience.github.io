@@ -74,3 +74,66 @@ nav a {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
 }
+/* =========================
+   LIGHT THEME OVERRIDE
+   ========================= */
+
+:root {
+
+  /* YOUR BRAND COLORS */
+  --primary: #B2CEFE;
+  --green: #BAED91;
+  --pink: #FEA3AA;
+
+  /* BACKGROUND + TEXT */
+  --color-body: #ffffff;
+  --color-text: #333333;
+  --color-text-dark: #111111;
+  --color-text-light: #666666;
+
+  /* ACCENT COLORS */
+  --color-1: #B2CEFE;
+  --color-2: #BAED91;
+
+  /* BUTTONS */
+  --color-btn: #B2CEFE;
+  --color-btn-text: #111111;
+  --color-btn-hover: #FEA3AA;
+  --color-btn-hover-text: #111111;
+
+  --color-btn-primary: #BAED91;
+  --color-btn-primary-text: #111111;
+  --color-btn-primary-hover: #FEA3AA;
+
+  /* BORDERS + UI */
+  --color-border: rgba(0,0,0,0.08);
+
+  /* PRELOADER FIX */
+  --color-preloader-bg: #ffffff;
+}
+section, .s-intro, .s-about, .s-works, .s-contact {
+  background: #ffffff !important;
+  color: #111111 !important;
+}
+
+.card, .works-item {
+  background: #ffffff;
+  border: 1px solid rgba(0,0,0,0.05);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.light-mode {
+  --color-body: #ffffff;
+  --color-text: #111111;
+}
+
+.dark-mode {
+  --color-body: #111111;
+  --color-text: #ffffff;
+}

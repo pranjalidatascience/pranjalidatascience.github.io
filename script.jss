@@ -10,3 +10,10 @@ window.addEventListener("scroll", () => {
     }
   });
 });
+
+document.addEventListener("keydown", function(e) {
+  if (e.key === "d") {
+    document.body.classList.toggle("dark-mode");
+    document.body.classList.toggle("light-mode");
+  }
+});
