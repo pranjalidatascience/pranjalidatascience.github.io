@@ -363,7 +363,7 @@ nav a:focus {
 .hero,
 #home {
     position: relative;
-    width: 100%;
+    width: 80%;
     background: var(--white);
 }
 
@@ -513,7 +513,7 @@ button.btn:hover {
 ============================================================= */
 
 section {
-    width: 100%;
+    width: 80%;
 }
 
 .section,
@@ -623,7 +623,7 @@ section {
 .experience-list,
 .timeline,
 .folio-list {
-    width: 100%;
+    width: 80%;
 }
 
 .experience-item,
@@ -945,7 +945,7 @@ footer > .row {
 @media screen and (max-width: 1200px) {
 
     :root {
-        --content-width: 88%;
+        --content-width: 80%;
     }
 
     .intro-content,
@@ -989,7 +989,7 @@ footer > .row {
 @media screen and (max-width: 900px) {
 
     :root {
-        --content-width: 90%;
+        --content-width: 80%;
     }
 
     .intro-content,
@@ -1076,7 +1076,7 @@ footer > .row {
 @media screen and (max-width: 600px) {
 
     :root {
-        --content-width: 92%;
+        --content-width: 80%;
         --section-space: 5rem;
     }
 
