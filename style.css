@@ -1169,7 +1169,7 @@ footer > .row {
 @media screen and (max-width: 400px) {
 
     :root {
-        --content-width: 92%;
+        --content-width: 80%;
     }
 
     .main-nav ul,
